@@ -1,5 +1,5 @@
 {
-  "name": "colors-system-export",
+  "name": "color-system-export",
   "version": "1.0.0",
   "description": "Export color systems in formats that can be imported by other tools.",
   "main": "src/index.ts",
