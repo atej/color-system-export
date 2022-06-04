@@ -1,0 +1,15 @@
+# Dependency directories
+node_modules/
+
+# Generated files
+build/radix/sketch/*
+
+# Delete these if you want to commit your palettes
+**/palettes/*
+!**/palettes/*.example.ts
+
+# To preserve folders
+!.gitkeep
+
+# macOS
+.DS_Store
