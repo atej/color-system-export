@@ -26,7 +26,7 @@ const figmaTokens: {
         type: 'color',
       },
       transparent: {
-        value: 'hsla(0, 0%, 0%, 0)',
+        value: 'rgba(0, 0, 0, 0)',
         type: 'color',
       },
     },
