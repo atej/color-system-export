@@ -17,6 +17,6 @@ tools.
 
 1. Define your palette in a new file in `src/radix/palettes`
 2. Export the newly created palette from `src/radix/palettes/index.ts`
-3. Run `npm run generate radix <PaletteId> sketch`
+3. Run `npm run export radix <PaletteId> sketch`
 4. Import the generated text file into Sketch using the plugin
    [Import Colors](https://github.com/Ashung/import-colors-sketch)

@@ -1,14 +1,16 @@
 import { writeFile } from 'fs'
+import mkdirp from 'mkdirp'
 import { join } from 'path'
 
 export const createFile = (
-  fileName: string,
+  fileNameWithExtension: string,
   data: string,
   filePath = '',
   successMsg?: string,
 ) => {
   const buildPath = join(__dirname, '..', '..', 'build')
-  const file = join(buildPath, filePath, `${fileName}.txt`)
+  const file = join(buildPath, filePath, `${fileNameWithExtension}`)
+  mkdirp.sync(join(buildPath, filePath))
   writeFile(file, data, 'utf8', err => {
     if (err) {
       console.log(err)

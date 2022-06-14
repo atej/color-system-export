@@ -65,11 +65,11 @@ export const serializeSketchColors = (colors: SketchColors) => {
 }
 
 export const createSketchColorsTextFile = (palette: Palette) => {
-  const fileName = `${palette.id}-${getTimestamp()}`
+  const fileNameWithExtension = `${palette.id}-${getTimestamp()}.txt`
   createFile(
-    fileName,
+    fileNameWithExtension,
     serializeSketchColors(generateSketchColors(palette.colors)),
-    join('radix', 'sketch'),
+    join(palette.id, 'radix', 'sketch'),
     `💎 SKETCH: import file using the 'Import Colors' plugin`,
   )
 }
