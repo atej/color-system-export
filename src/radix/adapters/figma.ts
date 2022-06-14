@@ -1,7 +1,6 @@
 import { join } from 'path'
 import * as radixColors from '@radix-ui/colors'
 import { createFile, getTimestamp } from '../../shared/utils'
-import { GOOD_MOVE } from '../palettes/good-move'
 import {
   ColorVariant,
   OverlayColorName,
@@ -110,7 +109,7 @@ export const createFigmaTokensJsonFiles = (palette: Palette) => {
   const sets = Object.keys(figmaTokens) as SetName[]
 
   for (const set of sets) {
-    const fileName = `${set}.json`
+    const fileName = `${set}-${getTimestamp()}.json`
     const filePath = join(palette.id, 'radix', 'figma')
     const data = serialize(set)
     createFile(fileName, data, filePath)
