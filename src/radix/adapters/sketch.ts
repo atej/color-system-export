@@ -50,7 +50,7 @@ export const generateSketchColors = generateColors<SketchColors>({
   init: {
     'White / white': '#ffffff',
     'Black / black': '#000000',
-    'Transparent / transparent': 'hsla(0,0,0,0)',
+    'Transparent / transparent': 'rgba(0, 0, 0, 0)',
   },
   addOverlayColor,
   addThemeColor,
