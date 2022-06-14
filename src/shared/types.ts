@@ -1,6 +1,6 @@
 export type ColorSystem = 'radix'
 
-export type Adapter = 'sketch'
+export type Adapter = 'sketch' | 'figma'
 
 export type IPalette = {
   id: string
